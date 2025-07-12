@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎓 Student Registration Form</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+  <div class="background-pattern"></div>
+  <div class="main-wrapper">
+    <header>
+      <div class="header-content">
+        <div class="header-icon">🎓</div>
+        <h1>Student registration</h1>
+        <p class="header-subtitle">Manage your student database with ease</p>
+      </div>
+    </header>
+    <main class="content-flex-container">
+      <!-- Form Section -->
+      <section class="form-section">
+        <div class="section-header">
+          <div class="section-icon">👩‍🎓</div>
+          <h2>Register student</h2>
+        </div>
+        <form id="userForm">
+          <div class="input-group">
+            <div class="input-wrapper">
+              <span class="input-icon">👤</span>
+              <input type="text" id="nameInput" placeholder="Enter student name" required />
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-wrapper">
+              <span class="input-icon">▶️</span>
+              <input type="number" id="ageInput" placeholder="Enter student age" required />
+            </div>
+          </div>
+          <div class="form-buttons">
+            <button type="submit" class="btn-primary">
+              <span class="btn-icon">💾</span>
+              Save student
+            </button>
+            <button type="button" id="clearBtn" class="btn-secondary">
+              <span class="btn-icon">🗑️</span>
+              Clear All
+            </button>
+            <button type="button" id="loadBtn" class="btn-secondary">
+              <span class="btn-icon">🔄</span>
+              Load Students
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- Output Section -->
+      <section class="output-section">
+        <div class="section-header">
+          <div class="section-icon">📋</div>
+          <h2>Registered students</h2>
+        </div>
+        <div id="userData" class="outputBox">
+          <p class="no-students-message">
+            <span class="empty-icon">📚</span>
+            No students registered yet.
+            <span class="empty-subtitle">Add your first student to get started!</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Session Counter -->
+    <footer class="footer-counter">
+      <div class="counter-wrapper">
+        <span class="counter-label">Interactions with system</span>
+        <div class="session-counter-circle">
+          <p class="sessionCounter">0</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
