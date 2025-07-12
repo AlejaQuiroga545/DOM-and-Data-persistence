@@ -59,7 +59,5 @@ A lightweight and responsive Single Page Application (SPA) built with HTML, CSS,
 
 ---
 
-### SweetAlert2
-
-👩‍💻 Author
+### 👩‍💻 Author
 Created with 💜 by Aleja Quiroga
